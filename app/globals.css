@@ -747,41 +747,32 @@ ul {
 
 @media (max-width: 1100px) {
   .headerInner {
-    grid-template-columns: auto 1fr auto;
-    gap: 14px;
-    padding: 12px 0 14px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 14px 0 18px;
   }
 
   .siteNav {
-    gap: 16px;
-    font-size: 0.8rem;
+    gap: 18px;
   }
 
   .headerActions {
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .heroGrid {
-    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-    gap: 24px;
+  .heroGrid,
+  .splitLayout,
+  .footerInner {
+    grid-template-columns: 1fr;
   }
 
   .serviceGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .splitLayout {
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-    gap: 24px;
-  }
-
-  .footerInner {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-  }
-
   .processGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .imageHighlightFrame {
@@ -789,7 +780,7 @@ ul {
   }
 
   .heroVisual {
-    min-height: 520px;
+    min-height: 620px;
   }
 }
 
@@ -803,25 +794,24 @@ ul {
   }
 
   .heroTrust {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .heroCopy h1 {
-    max-width: 10ch;
-    font-size: clamp(2.3rem, 8.8vw, 3.4rem);
+    max-width: 11ch;
+    font-size: clamp(2.8rem, 13vw, 4rem);
   }
 
   .heroLead {
-    font-size: 0.98rem;
+    font-size: 1.06rem;
   }
 
   .heroVisual {
-    min-height: 320px;
-    margin-top: 0;
+    min-height: 500px;
   }
 
   .imageHighlightFrame {
-    min-height: 260px;
+    min-height: 300px;
     padding: 10px;
     border-radius: 26px;
   }
@@ -840,8 +830,8 @@ ul {
   }
 
   .heroLogoArt {
-    width: min(100%, 360px);
-    transform: scale(0.96);
+    width: min(126%, 620px);
+    transform: scale(1.14);
     mix-blend-mode: normal;
     opacity: 1;
     -webkit-mask-image: none;
@@ -852,11 +842,11 @@ ul {
   }
 
   .serviceGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .serviceTile {
-    min-height: 220px;
+    min-height: 270px;
   }
 
   .metricStrip {
@@ -864,21 +854,7 @@ ul {
   }
 
   .quoteRow {
-    grid-template-columns: 32px 1fr;
-  }
-
-  .splitLayout {
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-    gap: 18px;
-  }
-
-  .footerInner {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-  }
-
-  .processGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .siteNav {
